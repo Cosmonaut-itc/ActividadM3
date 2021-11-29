@@ -78,8 +78,7 @@ class IntersectionModel(ap.Model):
         # Define the agents representing the vehicles
         self.vehicles = ap.AgentList(self, n_vehicles, Vehicle)
 
-        # Define the agents representing the road and the stop sign
-        self.road = ap.AgentList(self, n_roads, Roads)
+        # Define the agent representing the stop sign
         self.stop_light = ap.AgentList(self, 2, StopLight)
 
         # Creates the atribute grid in both agent vehicles in order to acces values like position
